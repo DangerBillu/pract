@@ -1,7 +1,7 @@
 def srch():
     stack = []
-    with open("rain.txt", "r") as f:
-        s = f.read()
+    f= open("rain.txt", "r")
+    s = f.read()
     d = s.split()
     for i in range(1, len(d), 2):
         stack.append(float(d[i]))
