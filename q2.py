@@ -15,3 +15,23 @@ def display_stack():
     for item in stack[::-1]:
         print(item)
 display_stack()
+
+def menu():
+    while True:
+        print("\nMenu:")
+        print("1. Push")
+        print("2. Pop")
+        print("3. Display Stack")
+        print("4. Exit")
+        choice = input("Enter your choice: ")
+
+        if choice == '1':
+            push()
+        elif choice == '2':
+            pop()
+        elif choice == '3':
+            display_stack()
+        elif choice == '4':
+            print("Exiting the program.")
+            break
+menu()
